@@ -145,14 +145,14 @@
                 the brain become damaged or die.</p>
         </div>
         <div class="container">
-            <form action="/" method="POST">
+            <form action="{{ url_for('result') }}" method="POST">
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Gender</label>
                     <select class="form-select" id="gender" name="gender" aria-label="Default select example">
                         <option selected value="unknown">-- Select gender --</option>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                        <option value="Other">Other</option>
+                        <option value="1">Male</option>
+                        <option value="0">Female</option>
+                        <option value="2">Other</option>
                     </select>
                 </div>
                 <div class="mb-3">
@@ -190,11 +190,11 @@
                     <label for="exampleInputPassword1" class="form-label">Work Type</label>
                     <select class="form-select" id="work" name="work" aria-label="Default select example">
                         <option selected>-- Select Work type --</option>
-                        <option value="Self-employed">Self-Employed</option>
-                        <option value="Private">Private</option>
-                        <option value="children">Children</option>
-                        <option value="Govt_job">Government Job</option>
-                        <option value="Never_worked">Never Worked</option>
+                        <option value="3">Self-Employed</option>
+                        <option value="2">Private</option>
+                        <option value="4">Children</option>
+                        <option value="0">Government Job</option>
+                        <option value="1">Never Worked</option>
                     </select>
                 </div>
                 <div class="mb-3">
@@ -202,8 +202,8 @@
                         Type</label>
                     <select class="form-select" id="residence" name="residence" aria-label="Default select example">
                         <option selected>-- Select Residence type --</option>
-                        <option value="Urban">Urban</option>
-                        <option value="Rural">Rural</option>
+                        <option value="1">Urban</option>
+                        <option value="0">Rural</option>
                     </select>
                 </div>
                 <div class="mb-3">
@@ -220,10 +220,10 @@
                         Status</label>
                     <select class="form-select" id="smoking" name="smoking" aria-label="Default select example">
                         <option selected value="Unknown">-- Select Smoking status --</option>
-                        <option value="never smoked">Never Smoked</option>
-                        <option value="formerly smoked">Formerly Smoked</option>
-                        <option value="smokes">Smokes</option>
-                        <option value="unknown">Unknown</option>
+                        <option value="2">Never Smoked</option>
+                        <option value="1">Formerly Smoked</option>
+                        <option value="3">Smokes</option>
+                        <option value="0">Unknown</option>
                     </select>
                 </div>
                 <div class="text-center">
